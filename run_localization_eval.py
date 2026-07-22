@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Execute only Stanford Dogs detection + IoU eval cells (no Part 1 training).
+Execute only the Stanford Dogs detection + IoU eval cells (skips classifier training).
 Run from project root: python run_localization_eval.py
 
 Optional env:
@@ -23,7 +23,7 @@ sys.path.insert(0, str(ROOT))
 
 
 def main() -> None:
-    nb_path = ROOT / "ECSE415_Project.ipynb"
+    nb_path = ROOT / "dog_detector.ipynb"
     nb = json.loads(nb_path.read_text())
 
     indices = [2, 45, 47, 50, 52, 56, 57, 58, 63]

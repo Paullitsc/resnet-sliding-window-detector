@@ -1,7 +1,6 @@
 /data
 /.venv
 /.venv_eval
-/ecse-415-winter-2026-dog-vs-cat-classification/
 /models_for_submission/
 *.pth
 !resnet50_noaug.pth
